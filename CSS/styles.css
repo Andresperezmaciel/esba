@@ -1,11 +1,12 @@
 body{
     font-family: sans-serif;
     margin: 0;
+    background-color: goldenrod;
 }
 
 header{
     display: flex;
-    height: 70px;
+    min-height: 70px;
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -34,4 +35,23 @@ nav a{
 
 nav a:hover{
     color: goldenrod;
+}
+
+
+.navegador{
+    padding-right: 40%;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    
+    .navegador{
+        padding-right: 0%;
+    }
 }
