@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: goldenrod;
+    background-color: white;
 }
 
 header{
@@ -15,6 +15,7 @@ header{
 
 .logo{
     display: flex;
+
 }
 
 .logo img{
@@ -39,7 +40,7 @@ nav a:hover{
 
 
 .navegador{
-    padding-right: 40%;
+    padding-right: 10%;
 }
 
 @media (max-width:700px){
@@ -57,12 +58,29 @@ nav a:hover{
 }
 
 .barranegra{
-    background-color: black;
+    background-color: goldenrod;
     margin: 0;
-    height: 5px;
+    height: 8px;
 
 }
 
-.iniciarsesion{
-    
-}
+.my-button {
+    padding: 20px 30px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+  }
+  
+  .my-button:hover {
+    background-color: gold;
+  }
+  
+  .my-button:active {
+    background-color: goldenrod;
+  }
+  
