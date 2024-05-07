@@ -65,14 +65,13 @@ nav a:hover{
 }
 
 .my-button {
-    padding: 20px 30px;
+    padding: 10px 18px;
     background-color: goldenrod;
     color: white;
-    border: none;
+    border: black;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    margin-right: 20px;
     font-size: 15px;
   }
   
