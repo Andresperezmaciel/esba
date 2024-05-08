@@ -58,9 +58,15 @@ nav a:hover{
 }
 
 .barranegra{
+    background-color: black;
+    margin: 0;
+    height: 3px;
+
+}
+.barraoro{
     background-color: goldenrod;
     margin: 0;
-    height: 8px;
+    height: 3px;
 
 }
 
@@ -83,3 +89,19 @@ nav a:hover{
     background-color: goldenrod;
   }
   
+  .parrafo-footer{
+    text-decoration: none;
+    color: goldenrod;
+    font-style: italic;
+  }
+
+.copyright{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    padding-top: 2%;
+}
+
+.containerfooter{
+    height: 60px;
+}
