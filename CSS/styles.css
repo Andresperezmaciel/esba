@@ -1,7 +1,14 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: white;
+}
+
+.fondocontacto{
+    background-image: url(../image/empresafondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header{
@@ -79,21 +86,21 @@ nav a:hover{
     cursor: pointer;
     text-decoration: none;
     font-size: 15px;
-  }
+}
   
-  .my-button:hover {
+.my-button:hover {
     background-color: gold;
-  }
+}
   
-  .my-button:active {
+.my-button:active {
     background-color: goldenrod;
-  }
+}
   
-  .parrafo-footer{
+.parrafo-footer{
     text-decoration: none;
     color: goldenrod;
     font-style: italic;
-  }
+}
 
 .copyright{
     text-decoration: none;
@@ -105,3 +112,14 @@ nav a:hover{
 .containerfooter{
     height: 60px;
 }
+
+main{
+    min-height: calc(100vh - 100px - 82px);
+    padding-top: 2%;
+}
+
+.mainlogin{
+    padding: 0%;
+    min-height: 100vh;
+}
+
