@@ -1,9 +1,9 @@
-body{
+body{ /*Se ajusta el margen del body a 0 y la tipografía por defecto*/
     font-family: sans-serif;
     margin: 0;
 }
 
-.fondocontacto{
+.fondocontacto{ /*Ajustes de la imagen del fondo en la sección de "Contacto"*/
     background-image: url(../image/empresafondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@ body{
     background-attachment: fixed;
 }
 
-header{
+header{ /*Ajustes del header (navegador)*/
     display: flex;
     min-height: 70px;
     background-color: white;
@@ -20,37 +20,29 @@ header{
     padding: 10px;
 }
 
-.logo{
+.logo{ /*Ajustes del logo de la empresa que aparece en el header*/
     display: flex;
 
 }
 
-.logo img{
+.logo img{ /*Ajustes del logo de la empresa que aparece en el header*/
     height: 100px;
     align-items: center;
     margin-right: 10px;
 }
 
-a{
+a{ /*Decoración del navegador*/
     text-decoration: none;
     color: black;
 }
 
-nav a{
+nav a{ /*Ajustes del navegador*/
     font-weight: 600;
     padding-right: 10px;
 }
 
-nav a:hover{
-    color: goldenrod;
-}
 
-
-.navegador{
-    padding-right: 10%;
-}
-
-@media (max-width:700px){
+@media (max-width:700px){ /* */
     header{
         flex-direction: column;
     }
@@ -64,20 +56,20 @@ nav a:hover{
     }
 }
 
-.barranegra{
+.barranegra{ /*Es la línea dorada que se encuentra debajo del header*/
     background-color: black;
     margin: 0;
     height: 3px;
 
 }
-.barraoro{
+.barraoro{ /*Es la línea dorada que se encuentra debajo del header*/
     background-color: goldenrod;
     margin: 0;
     height: 3px;
 
 }
 
-.my-button {
+.my-button { /*Decoración del boton de inicio de sesión*/
     padding: 10px 18px;
     background-color: goldenrod;
     color: white;
@@ -88,38 +80,77 @@ nav a:hover{
     font-size: 15px;
 }
   
-.my-button:hover {
+.my-button:hover { /*Decoración del boton de inicio de sesión*/
     background-color: gold;
 }
   
-.my-button:active {
+.my-button:active { /*Decoración del boton de inicio de sesión*/
     background-color: goldenrod;
 }
   
-.parrafo-footer{
+.parrafo-footer{ /*Decoración del texto del copyright*/
     text-decoration: none;
     color: goldenrod;
     font-style: italic;
 }
 
-.copyright{
+.copyright{ /*Decoración del texto del copyright*/
     text-decoration: none;
     color: white;
     font-style: italic;
     padding-top: 2%;
 }
 
-.containerfooter{
+.containerfooter{ /*La altura del footer*/
     height: 60px;
 }
 
-main{
+main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
     min-height: calc(100vh - 100px - 82px);
     padding-top: 2%;
 }
 
-.mainlogin{
+.mainlogin{ /*Se le saca el padding y se ajusta el view al 100% del login*/
     padding: 0%;
     min-height: 100vh;
 }
 
+.decoraciontexto{ /*Es la decoración del título de "Sobre Rimberio"*/
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 50px;
+    text-size-adjust: 100%;
+    padding-right: 10%;
+    padding-top:2%;
+}
+
+.parrafobody{ /*Es todo el texto de la parte de "Sobre Rimberio"*/
+    text-decoration: none;
+    text-size-adjust: 100%;
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: left;
+    padding-right: 10%;
+}
+
+.rimberiostyle{  /*Decoración de la parte dorada de los títulos*/
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.card-text{ /*Alineación del texto de las cartas de servicios*/
+    text-align: left;
+}
+
+.decoraciontextoservicios{ /*Decoración del título de Servicios*/
+    text-decoration-line: overline;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 50px;
+    text-size-adjust: 100%;
+}
+
+.filaseparada{ /* Fila que separa las 2 filas de servicios */
+    padding-top: 1%;
+} 
