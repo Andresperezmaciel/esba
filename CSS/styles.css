@@ -154,3 +154,8 @@ main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
 .filaseparada{ /* Fila que separa las 2 filas de servicios */
     padding-top: 1%;
 } 
+
+.numeral{ /* Decoración del numeral en la parte de contactos*/
+    text-decoration: none;
+    color: red;
+}
