@@ -157,21 +157,69 @@ main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
     padding-top: 1%;
 } 
 
+.fondorimberio{ /*Da el fondo gris que se ve en el body*/
+    background-color: rgb(235, 235, 235);
+}
+
 .numeral{ /* Decoración del numeral en la parte de contactos*/
     text-decoration: none;
     color: red;
 }
 
-.imagendis1{
+/*  Distribuidores Exclusivos  */
+
+.imagendis1{ /*Se acomoda la primera imagen*/
     display: flex;
     align-items: center;
 }
 
-.imagendis2{
+.imagendis2{ /*Se acomoda la segunda imagen*/
     display: flex;
     align-items: center;
 }
 
-.fondorimberio{
-    background-color: rgb(235, 235, 235);
+
+/* Datos de la empresa */
+
+.empresa { /*Se ajusta la imagen del fondo de la parte de los datos en número de la empresa*/
+    width: 100%;
+    background-image: url(../image/empresaindex.jpg);
+    overflow: auto;
+    padding: 60px 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+
+.colum40 { /*Se acomoda el tamaño que ocupa cada "círculo"*/
+    float: left;
+    width: 40%;
+}
+.colum20 { /*Se acomoda el tamaño que ocupa cada "círculo"*/
+    float: left;
+    width: 20%;
+}
+.colum25 { /*Se acomoda el tamaño que ocupa cada "círculo"*/
+    float: left;
+    width: 25%;
+}
+.circulos { /*Se hace la configuración de los círculos, dándole la forma, lo que mide, ocupa y el color*/
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'avantgarde_medium';
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 15px goldenrod solid;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
