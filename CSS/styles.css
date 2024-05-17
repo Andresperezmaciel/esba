@@ -9,6 +9,8 @@ body{ /*Se ajusta el margen del body a 0 y la tipografía por defecto*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-top: 5%;
+    min-height: calc(100vh - 102px - 82px);
 }
 
 header{ /*Ajustes del header (navegador)*/
@@ -102,12 +104,12 @@ nav a{ /*Ajustes del navegador*/
 }
 
 .containerfooter{ /*La altura del footer*/
-    height: 60px;
+    min-height: 60px;
+    height: 100%;
 }
 
 main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
-    min-height: calc(100vh - 100px - 82px);
-    padding-top: 2%;
+    min-height: calc(100vh - 10px - 82px);
 }
 
 .mainlogin{ /*Se le saca el padding y se ajusta el view al 100% del login*/
@@ -158,4 +160,18 @@ main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
 .numeral{ /* Decoración del numeral en la parte de contactos*/
     text-decoration: none;
     color: red;
+}
+
+.imagendis1{
+    display: flex;
+    align-items: center;
+}
+
+.imagendis2{
+    display: flex;
+    align-items: center;
+}
+
+.fondorimberio{
+    background-color: rgb(235, 235, 235);
 }
