@@ -15,7 +15,7 @@ body{
 }
 
 main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
-    min-height: calc(100vh - 10px - 82px);
+    min-height: calc(100vh - 36px - 82px);
 }
 
 .login-box {
@@ -74,6 +74,6 @@ main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
   }
 
 .footer{
-    min-height: -20px;
+    min-height: 20px;
     height: 100%;
 }
