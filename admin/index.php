@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Admin</title>
+    <title>Admin | Login</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" href="../image/favicon.png">
     <script src="https://kit.fontawesome.com/ee57d1c92d.js" crossorigin="anonymous"></script>
@@ -29,10 +29,10 @@
     <div class="login-box">
       <img src="../image/logosinfondo2.png" />
       <h2>Admin Login</h2>
-      <form>
-        <input type="text" placeholder="Username" />
+      <form method="POST" action="http://localhost/esba-master/admin/includes/validaradm.php">
+        <input type="text" name="usuario" placeholder="Username" />
         <br>
-        <input type="password" placeholder="Password" />
+        <input type="password" name="password" placeholder="Password" />
         <br>
         <button>Login</button>
       </form>
