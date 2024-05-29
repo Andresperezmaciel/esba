@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2024 a las 19:01:27
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Host: 127.0.0.1
+-- Generation Time: May 29, 2024 at 08:09 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `rimberio`
+-- Database: `rimberio`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `adm`
+-- Table structure for table `adm`
 --
 
 CREATE TABLE `adm` (
@@ -34,7 +34,7 @@ CREATE TABLE `adm` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `adm`
+-- Dumping data for table `adm`
 --
 
 INSERT INTO `adm` (`id`, `user`, `passw`) VALUES
@@ -43,7 +43,46 @@ INSERT INTO `adm` (`id`, `user`, `passw`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `users`
+-- Table structure for table `marcas`
+--
+
+CREATE TABLE `marcas` (
+  `id` int(3) NOT NULL,
+  `nombre` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `producto`
+--
+
+CREATE TABLE `producto` (
+  `id` int(3) NOT NULL,
+  `marca_id` int(3) NOT NULL,
+  `tipo_producto_id` int(3) NOT NULL,
+  `descripcion` varchar(150) NOT NULL,
+  `precio` decimal(10,0) NOT NULL,
+  `stock_central` int(7) NOT NULL,
+  `stock_cordoba` int(7) NOT NULL,
+  `stock_rosario` int(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tipo_producto`
+--
+
+CREATE TABLE `tipo_producto` (
+  `id` int(3) NOT NULL,
+  `nombre` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -58,7 +97,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `usuario`, `contrasena`, `nombre_empresa`, `direccion`, `cuit`, `telefono`, `mail`) VALUES
@@ -70,36 +109,67 @@ INSERT INTO `users` (`id`, `usuario`, `contrasena`, `nombre_empresa`, `direccion
 (8, 'prueba pattern', '8e470fd8de80471', 'prueba pattern', 'av pattern', '28918736500', 1123769823, 'alfredo.galvez@gmail.com');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `adm`
+-- Indexes for table `adm`
 --
 ALTER TABLE `adm`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `users`
+-- Indexes for table `marcas`
+--
+ALTER TABLE `marcas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `producto`
+--
+ALTER TABLE `producto`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `FK_marca` (`marca_id`),
+  ADD KEY `FK_tipoproducto` (`tipo_producto_id`);
+
+--
+-- Indexes for table `tipo_producto`
+--
+ALTER TABLE `tipo_producto`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `adm`
+-- AUTO_INCREMENT for table `adm`
 --
 ALTER TABLE `adm`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de la tabla `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `producto`
+--
+ALTER TABLE `producto`
+  ADD CONSTRAINT `FK_marca` FOREIGN KEY (`marca_id`) REFERENCES `marcas` (`id`),
+  ADD CONSTRAINT `FK_tipoproducto` FOREIGN KEY (`tipo_producto_id`) REFERENCES `tipo_producto` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
