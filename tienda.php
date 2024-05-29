@@ -61,6 +61,27 @@
 					</form>
 				</div>
             </div>
+            
+            <!-- Items que aparecen en el buscador -->
+
+            <div class="container">
+				<div class="item-list">
+					<div class="row" id="catalogo">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <div class="item">
+                                <figure class="image-box">
+                                    <a class="fancybox" href="/image/data/productos/15-059-001.jpg" data-fancybox-group="gallery">
+                                    <img src="/image/data/productos/15-059-001.jpg" alt="15/059/001 ALMAS DE PARAGOLPE A3 96/04 DELANTERA"></a>
+                                </figure>
+                                <div class="content-box">
+                                    <h4><a>15/059/001</a></h4
+                                    <p>ALMAS DE PARAGOLPE A3 96/04 DELANTERA</p>
+                                </div>
+                            </div>
+                        </div>
+        			</div>
+				</div>
+			</div>
         </section>
       </main>
     
