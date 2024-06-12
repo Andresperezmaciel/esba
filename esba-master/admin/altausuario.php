@@ -25,7 +25,7 @@
     <br><br>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-3">
                     <?php include("includes/menuadm.php");?>
                     <div class="col-md-9">
@@ -33,7 +33,7 @@
                             <h4 class="text-center">Alta de Usuario</h4>
                         </div>
                         <form method="POST" action="includes/validaraltauser.php">
-                            <div class="row gy-3 overflow-hidden">
+                            <div class="row gy-3 overflow-hidden justify-content-center text-center">
                             <div class="col-7">
                                 <div class="form-floating mb-1">
                                 <input type="text" class="form-control" name="usuario" id="usuario" placeholder="User" required>
@@ -77,8 +77,8 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="d-grid">
-                                <button class="btn btn-dark btn-lg" type="submit" name="registrar">Registrar</button>
+                                <div class="justify-content-center text-center">
+                                <button class="btn btn-dark btn-lg btn-registrar" type="submit" name="registrar">Registrar</button>
                                 </div>
                             </div>
                             </div>

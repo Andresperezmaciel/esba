@@ -30,10 +30,10 @@
                     <?php include("includes/menuadm.php");?>
                     <div class="col-md-9">
                         <div class="mb-3">
-                            <h4 class="text-center">Alta Tipo de Producto</h4>
+                            <h4 class="justify-content-center text-center">Alta Tipo de Producto</h4>
                         </div>
                         <form method="POST" action="includes/validaraltatipo_producto.php">
-                            <div class="row gy-3 overflow-hidden">
+                            <div class="row gy-3 overflow-hidden justify-content-center text-center">
                                 <div class="col-7">
                                     <select name="marca" class="span8 tip" required>
                                         <option value="">Seleccione Marca</option> 
@@ -52,8 +52,8 @@
                             </div>
                             <div class="col-6">
                                 <br>
-                                <div class="d-grid">
-                                    <button class="btn btn-dark btn-lg" type="submit" name="registrar">Registrar</button>
+                                <div class="justify-content-center text-center">
+                                    <button class="btn btn-dark btn-lg btn-registrar" type="submit" name="registrar">Registrar</button>
                                 </div>
                             </div>
                         </form>

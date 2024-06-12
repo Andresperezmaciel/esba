@@ -25,7 +25,7 @@
     <br><br>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center text-center">
                 <div class="col-md-3">
                     <?php include("includes/menuadm.php");?>
                     <div class="col-md-9">
@@ -33,7 +33,7 @@
                             <h4 class="text-center">Alta de Marca</h4>
                         </div>
                         <form method="POST" action="includes/validaraltamarca.php">
-                            <div class="row gy-3 overflow-hidden">
+                            <div class="row gy-3 overflow-hidden justify-content-center text-center">
                             <div class="col-7">
                                 <div class="form-floating mb-1">
                                 <input type="text" class="form-control" name="marca" id="marca" placeholder="" required>
@@ -42,15 +42,15 @@
                             </div>
                             <div class="col-6">
                                 <br><br>
-                                <div class="d-grid">
-                                <button class="btn btn-dark btn-lg" type="submit" name="registrar">Registrar</button>
+                                <div class="justify-content-center text-center">
+                                <button class="btn btn-dark btn-lg btn-registrar" type="submit" name="registrar">Registrar</button>
                                 </div>
                             </div>
                             </div>
                             <br><br>
                         </form>
                         <div class="mb-3">
-                            <h4 class="text-center">Bajas/Modificaciones Marcas</h4>
+                            <h4 class="justify-content-center text-center">Bajas/Modificaciones Marcas</h4>
                         </div>
                         <table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
 							<thead>

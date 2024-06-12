@@ -30,7 +30,7 @@
                     <?php include("includes/menuadm.php");?>
                     <div class="col-md-9">
                         <div class="mb-3">
-                            <h4 class="text-center">Alta Producto</h4>
+                            <h4 class="justify-content-center text-center">Alta Producto</h4>
                         </div>
                         <script>
                             //FUNCIÓN PARA LLAMAR A LOS TIPOS DE PRODUCTO DEPENDIENDO DE LA MARCA
@@ -46,7 +46,7 @@
                             }
                         </script>
                         <form method="POST" action="includes/validaraltaproducto.php">
-                            <div class="row gy-3 overflow-hidden">
+                            <div class="row gy-3 overflow-hidden justify-content-center text-center">
                                 <div class="col-7">
                                     <select id="marca" name="marca" onchange="loadProducts(this.value)">
                                         <option value="">Selecciona una marca</option>
@@ -71,7 +71,7 @@
                                     </div>
                                 </div>
                                 <div class="col-7">
-                                    <div class="form-floating mb-1">
+                                    <div class="form-floating mb-1 ">
                                         <input type="text" class="form-control" name="precio" id="precio" placeholder="" required>
                                         <label for="precio" class="form-label" name="precio">Precio</label>
                                     </div>
@@ -95,8 +95,8 @@
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="d-grid">
-                                        <button class="btn btn-dark btn-lg" type="submit" name="registrar">Registrar</button>
+                                    <div class="justify-content-center text-center">
+                                        <button class="btn btn-dark btn-lg btn-registrar" type="submit" name="registrar">Registrar</button>
                                     </div>
                                 </div>
                             </div>

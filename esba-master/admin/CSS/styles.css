@@ -77,3 +77,17 @@ main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
     min-height: 20px;
     height: 100%;
 }
+
+.menuizq{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-registrar{
+  height: auto;
+  width: 60%;
+}
+
+input{
+  display: inline;
+}
