@@ -1,0 +1,296 @@
+body{ /*Se ajusta el margen del body a 0 y la tipografía por defecto*/
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.fondocontacto{ /*Ajustes de la imagen del fondo en la sección de "Contacto"*/
+    background-image: url(../image/empresafondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 5%;
+    min-height: calc(100vh - 100px - 82px);
+}
+
+header{ /*Ajustes del header (navegador)*/
+    display: flex;
+    min-height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{ /*Ajustes del logo de la empresa que aparece en el header*/
+    display: flex;
+
+}
+
+.logo img{ /*Ajustes del logo de la empresa que aparece en el header*/
+    height: 100px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+a{ /*Decoración del navegador*/
+    text-decoration: none;
+    color: black;
+}
+
+nav a{ /*Ajustes del navegador*/
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+@media (max-width:700px){ /* */
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    
+    .navegador{
+        padding-right: 0%;
+    }
+}
+
+.barranegra{ /*Es la línea dorada que se encuentra debajo del header*/
+    background-color: black;
+    margin: 0;
+    height: 3px;
+
+}
+.barraoro{ /*Es la línea dorada que se encuentra debajo del header*/
+    background-color: goldenrod;
+    margin: 0;
+    height: 3px;
+
+}
+
+.my-button { /*Decoración del boton de inicio de sesión*/
+    padding: 10px 18px;
+    background-color: goldenrod;
+    color: white;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+.my-button:hover { /*Decoración del boton de inicio de sesión*/
+    background-color: gold;
+}
+  
+.my-button:active { /*Decoración del boton de inicio de sesión*/
+    background-color: goldenrod;
+}
+  
+.parrafo-footer{ /*Decoración del texto del copyright*/
+    text-decoration: none;
+    color: goldenrod;
+    font-style: italic;
+}
+
+.copyright{ /*Decoración del texto del copyright*/
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    padding-top: 2%;
+}
+
+.containerfooter{ /*La altura del footer*/
+    min-height: 60px;
+    height: 100%;
+}
+
+main{ /*Se ajusta todo el main para que quedé bien con el header y el footer*/
+    min-height: calc(100vh - 100px - 82px);
+}
+
+.mainlogin{ /*Se le saca el padding y se ajusta el view al 100% del login*/
+    padding: 0%;
+    min-height: 100vh;
+}
+
+.decoraciontexto{ /*Es la decoración del título de "Sobre Rimberio"*/
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 50px;
+    text-size-adjust: 100%;
+    padding-right: 10%;
+    padding-top:2%;
+}
+
+.parrafobody{ /*Es todo el texto de la parte de "Sobre Rimberio"*/
+    text-decoration: none;
+    text-size-adjust: 100%;
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: left;
+    padding-right: 10%;
+}
+
+.rimberiostyle{  /*Decoración de la parte dorada de los títulos*/
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.card-text{ /*Alineación del texto de las cartas de servicios*/
+    text-align: left;
+}
+
+.decoraciontextoservicios{ /*Decoración del título de Servicios*/
+    text-decoration-line: overline;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 50px;
+    text-size-adjust: 100%;
+}
+
+.filaseparada{ /* Fila que separa las 2 filas de servicios */
+    padding-top: 1%;
+} 
+
+.fondorimberio{ /*Da el fondo gris que se ve en el body*/
+    background-color: rgb(235, 235, 235);
+}
+
+.numeral{ /* Decoración del numeral en la parte de contactos*/
+    text-decoration: none;
+    color: red;
+}
+
+/*  Distribuidores Exclusivos  */
+
+.imagendis1{ /*Se acomoda la primera imagen*/
+    display: flex;
+    align-items: center;
+}
+
+.imagendis2{ /*Se acomoda la segunda imagen*/
+    display: flex;
+    align-items: center;
+}
+
+
+/* Datos de la empresa */
+
+.empresa { /*Se ajusta la imagen del fondo de la parte de los datos en número de la empresa*/
+    width: 100%;
+    background-image: url(../../image/empresaindex.jpg);
+    overflow: auto;
+    padding: 60px 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.colum40 { /*Se acomoda el tamaño que ocupa cada "círculo"*/
+    float: left;
+    width: 40%;
+}
+.colum20 { /*Se acomoda el tamaño que ocupa cada "círculo"*/
+    float: left;
+    width: 20%;
+}
+.colum25 { /*Se acomoda el tamaño que ocupa cada "círculo"*/
+    float: left;
+    width: 25%;
+}
+.circulos { /*Se hace la configuración de los círculos, dándole la forma, lo que mide, ocupa y el color*/
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'avantgarde_medium';
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 15px goldenrod solid;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.default-form .form-group {
+    position: relative;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.default-form input[type="text"], .default-form input[type="email"], .default-form input[type="password"], .default-form input[type="number"], .default-form select, .default-form textarea {
+    display: block;
+    width: 100%;
+    line-height: 24px;
+    height: 55px;
+    font-size: 16px;
+    box-shadow: none;
+    border: 1px solid black;
+    padding: 12px 15px;
+    border-radius: 0px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.default-form .thm-btn {
+    width: 100%;
+}
+
+.thm-btn {
+    position: relative;
+    background: goldenrod;
+    font-size: 12px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    border: 2px solid black;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 8px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.thm-color {
+    color: white;
+}
+
+.titulobuscador{
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 30px;
+    box-sizing: border-box;
+    color: inherit;
+    line-height: 1.1;
+    font-weight: 500;
+    font-style: inherit;
+}
