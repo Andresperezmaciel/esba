@@ -1,0 +1,8 @@
+____________________  ____________________
+|                   | |                   |
+|  Cuenta admin:    | |  Cuenta user:     |
+|                   | |                   |
+|  Usuario: admin   | |  Usuario: prueba  | 
+|  Password: pruba  | |  Password: pruba  |
+|                   | |                   |
+|___________________| |___________________|
